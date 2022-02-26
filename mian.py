@@ -8,18 +8,19 @@ class posicion(object):
         self.x = x 
         self.y = y
 
-class celdita(posicion):
+class Celda(posicion):
     def __init__(self, x, y, costo):
         super().__init__(x, y)
         self.costo = costo
 
 class Pisos(object):
-    def __init__(self, nombre, r, c, f, s):
+    def __init__(self, nombre, r, c, f, s, celdas):
         self.nombre = nombre
         self.row = r
         self.colum = c
         self.flipe = f 
         self.slide = s
+        self.celdas = celdas
 
 class Patrones(Pisos):
     def __init__(self, nombre, r, c, f, s, codigo):
@@ -69,7 +70,9 @@ if __name__ == "__main__":
                 patrones = i.attrib.get('patrones')
                 #CODIGO
                 codigo = i.attrib.get('codigo')
-
+                #MATRIZ
+                posiciones = i.findall('patron')
+                celdas = lista()                
 
 
 
