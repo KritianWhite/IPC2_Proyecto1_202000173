@@ -1,16 +1,16 @@
 class Nodo:
-    def __init__(self, dato) -> None:
-        self.dato = dato
+    def __init__(self, patron):
+        self.patron = patron
         self.siguiete = None
 
-    def getDato(self):
-        return self.dato
+    def getPatron(self):
+        return self.patron
 
     def getSiguiente(self):
         return self.siguiete    
 
-    def setDato(self, datoNuevo):
-        self.dato = datoNuevo
+    def setPatron(self, patronNuevo):
+        self.patron = patronNuevo
 
     def setSiguiente(self, siguienteNew):
         self.siguiete = siguienteNew
