@@ -1,16 +1,21 @@
-class Nodo:
-    def __init__(self, patron):
+class NodoDoble:
+    def __init__(self, codigo = None, patron = None):
+        self.codigo = codigo
         self.patron = patron
-        self.siguiete = None
+        self.anterior = None
+        self.siguiente = None
 
-    def getPatron(self):
-        return self.patron
+class nodoDoble_Patron:
+    def __init__(self, codigoP = None, CoordenadaXP = None, CoordenadaYP = None, letraP = None) -> None:
+        self.codigoP = codigoP
+        self.CoordenadaXP = CoordenadaXP
+        self.CoordenadaYP = CoordenadaYP
+        self.letraP = letraP
+        self.siguienteP = None
+        self.anteriorP = None
 
-    def getSiguiente(self):
-        return self.siguiete    
+class nodoSimple:
+    def __init__(self, pisos = None) -> None:
+        self.pisos = pisos 
+        self.siguiente = None
 
-    def setPatron(self, patronNuevo):
-        self.patron = patronNuevo
-
-    def setSiguiente(self, siguienteNew):
-        self.siguiete = siguienteNew
