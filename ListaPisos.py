@@ -12,7 +12,7 @@ class pisoss:
         self.celdas = celdita()
 
 class listaSimple:
-    def __init__(self) -> None:
+    def __init__(self):
         self.primero = None
     
     def insertarLP(self, piso):
@@ -27,5 +27,6 @@ class listaSimple:
     def mostrar(self):
         actual = self.primero
         while actual != None:
-            print("Nombre", actual.pisos.nombre, "Fila: ", actual.pisos.filas, "Columna: ", actual.pisos.columnas, "Flipe: ", actual.pisos.flipe, "Slide: ", actual.pisos.slide)
+            #print("Nombre", actual.pisos.nombre, "Fila: ", actual.pisos.filas, "Columna: ", actual.pisos.columnas, "Flipe: ", actual.pisos.flipe, "Slide: ", actual.pisos.slide)
             actual = actual.siguiente
+        

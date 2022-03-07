@@ -6,8 +6,8 @@ class NodoDoble:
         self.siguiente = None
 
 class nodoDoble_Patron:
-    def __init__(self, codigoP = None, CoordenadaXP = None, CoordenadaYP = None, letraP = None) -> None:
-        self.codigoP = codigoP
+    def __init__(self, id = None, CoordenadaXP = None, CoordenadaYP = None, letraP = None):
+        self.id = id
         self.CoordenadaXP = CoordenadaXP
         self.CoordenadaYP = CoordenadaYP
         self.letraP = letraP
@@ -15,7 +15,7 @@ class nodoDoble_Patron:
         self.anteriorP = None
 
 class nodoSimple:
-    def __init__(self, pisos = None) -> None:
+    def __init__(self, pisos = None):
         self.pisos = pisos 
         self.siguiente = None
 
